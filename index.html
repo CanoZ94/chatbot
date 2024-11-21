@@ -4,23 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CanoBot</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Junusergin/fast-ui/style.css
-
-    ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Junusergin/fast-ui/style.css ">
 </head>
 <body>
 <header>CanoBot</header> 
-<div class="container mt-16">
-    <div class="msg">Hi</div>
-    <div class="msg">Wie gehts?</div>
-    <div class="msg-me">Hi</div>
-    <div class="msg">Wie gehts dir?</div>
-
-</div>
-<div class="container container-bottom"> 
-<input type="text" placeholder="Bitte Frage stellen.... ">
-<button>Fragen</button>
-</div>
-
+<div class="container mt-16 id="msgContainer">
+    <div class="msg">Hi. Bitte stelle mir deine Frage.</div>
+    </div>
+    <form class="container container-bottom" onsubmit="postChatMessage(); return false;"> 
+    <input type="text" placeholder="Bitte Frage stellen.... ">
+    <button>Fragen</button>
+    </form>
+     <script src="script.js"></script>
 </body>
 </html>
